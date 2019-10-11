@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "strict": true,
+      "target": "es5",
+      "sourceMap": true,
+      "allowJs": true,
+      "experimentalDecorators": true,
+      "typeRoots": [
+        "node_modules/@types",
+      ],
+      "lib": [
+        "dom",
+        "es6",
+        "esnext",
+        "es2015.promise"
+      ],
+      "importHelpers": true,
+      "allowSyntheticDefaultImports": true,
+    },
+    "files": ["./src/index.ts"],
+    "include": [
+      "./src/**/*"
+    ]
+  }
+  
