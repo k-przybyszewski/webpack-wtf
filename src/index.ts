@@ -1,5 +1,6 @@
-console.log('asd');
+import { pp } from './app'
+import { Kernel } from './Kernel'
+console.log('test');
+pp();
 
-// import { Kernel } from './Kernel'
-
-// const kernel = new Kernel();
+const kernel = new Kernel();

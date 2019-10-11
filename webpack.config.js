@@ -41,13 +41,12 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js' ],
   },
   optimization: {
-    runtimeChunk: 'single',
     splitChunks: {
+      chunks: 'async',
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
-          chunks: 'all',
         },
       },
     }
@@ -57,4 +56,7 @@ module.exports = {
     chunkFilename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
   },
+  plugins: [
+    new ManifestPlugin()
+  ]
 };
