@@ -41,7 +41,7 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js' ],
   },
   optimization: {
-    runtimeChunk: true,
+    runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
         vendor: {
